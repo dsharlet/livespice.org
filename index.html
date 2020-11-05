@@ -173,8 +173,7 @@
                         <li><strong><a target="_blank" href="https://en.wikipedia.org/wiki/Virtual_Studio_Technology">VST plugin</a></strong> 
                             enables loading your circuits as part of a larger DAW workflow.</li>
                         <li>Small but growing <strong>library of component and part models</strong>, including op-amps, transistors, 
-                            vacuum tubes, transformers, and more. Custom components can easily be added to the library by simply saving
-                            them in the library.</li>
+                            vacuum tubes, transformers, and more. Custom components can easily be added by simply saving them in the library.</li>
                         <li>Support for a subset of <strong>SPICE model types</strong> (D, NPN, PNP, NJF, PJF) enables utilization of existing SPICE component libraries.</li>
                         <li><strong>Supports ASIO audio devices</strong> for ultra low latency audio processing.</li>
                         <li><strong>Dynamically adjust control components</strong> such as potentiometers and variable resistors during simulation.</li>
@@ -201,11 +200,11 @@
                     <ul>
                         <li>Performance is reported as the rate of processing by the simulation; if the processing sample rate is greater than the audio sample 
                             rate, the simulation can run in real time.</li>
+                        <li>Factors of real time performance correspond to an audio sample rate of 44.1 kHz.</li>
                         <li>Not all simulations require the same oversampling rate to achieve real time performance. The oversampling factor was adjusted
                             from the default of 8x to enable real time simulation as necessary.</li>
-                        <li>All of the reported performance data is measured on an Intel i5 2500 (Sandy Bridge) CPU (2011).</li>
-                        <li>The performance data is not kept strictly up to date. Although performance is generally improving over time, some improvements have 
-                            required performance regressions. Hopefully, these are temporary when they do occur!</li>
+                        <li>All of the reported performance data is measured on an Intel i5 1035G4 (laptop CPU from 2019).</li>
+                        <li>There are many variables when measuring performance. Your milage may vary.</li>
                     </ul>
             
                     <div class="row">
@@ -214,7 +213,7 @@
                                 <img src="img/bosssd1.png" alt="Boss SD-1 Super Overdrive guitar pedal."></a>
                                 <p><strong>Boss SD-1 "Super Overdrive"</strong> guitar pedal.</p>
                             </div>
-                            <p>This simulation runs at 74.3 kHz with an 8x oversampling factor (1.68x real time at a 44.1 kHz sample rate).</p>
+                            <p>This simulation runs at 175 kHz with an 8x oversampling factor (4x real time).</p>
                             <p>Circuit schematic from <a target="_blank" href="http://www.gmarts.org/index.php?go=217">GM Arts</a>.</p>
                         </div>
                         <div class="col-md-4">
@@ -222,7 +221,7 @@
                                 <img src="img/marshallbluesbreaker.png" alt="Marshall Blues Breaker guitar pedal."></a>
                                 <p><strong>Marshall "Blues Breaker"</strong> guitar pedal.</p>
                             </div>
-                            <p>This simulation runs at 97.2 kHz with an 8x oversampling factor (2.2x real time at a 44.1 kHz sample rate).</p>
+                            <p>This simulation runs at 140 kHz with an 8x oversampling factor (3.2x real time).</p>
                             <p>Circuit schematic from <a target="_blank" href="http://www.gmarts.org/index.php?go=217">GM Arts</a>.</p>
                         </div>
                         <div class="col-md-4">
@@ -230,8 +229,8 @@
                                 <img src="img/bassmanpreamp.png" alt="Fender Bassman 5F6-A preamp."></a>
                                 <p><strong>Fender Bassman 5F6-A</strong> preamp and tone stack.</p>
                             </div>
-                            <p>This circuit contains 3 related triodes (using a model derived from the Child-Langmuir law).</p>
-                            <p>This simulation runs at 47.6 kHz with a 4x oversampling factor (1.08x real time at a 44.1 kHz sample rate).</p> 
+                            <p>This circuit contains 3 related triodes.</p>
+                            <p>This simulation runs at 71.5 kHz with a 4x oversampling factor (1.6x real time).</p> 
                             <p>Circuit schematic from <a target="_blank" href="http://www.turretboards.com/guitar_amplifier_builders_info_schematics_library.htm">Watts Tube Audio</a>.</p>
                         </div>
                         <div class="col-md-4">
@@ -239,7 +238,7 @@
                                 <img src="img/ibaneztubescreamer.png" alt="Ibanez Tube Screamer guitar pedal."></a>
                                 <p><strong>Ibanez "Tube Screamer" TS-9</strong> guitar pedal</p>
                             </div>
-                            <p>This simulation runs at 83 kHz with an 8x oversampling factor (1.88x real time at a 44.1 kHz sample rate).</p>
+                            <p>This simulation runs at 268 kHz with an 8x oversampling factor (6.1x real time).</p>
                             <p>Circuit schematic from <a target="_blank" href="http://www.gmarts.org/index.php?go=217">GM Arts</a>.</p>
                         </div>
                         <div class="col-md-4">
@@ -247,8 +246,8 @@
                                 <img src="img/commonemittertransistoramp.png" alt="Basic common emitter transistor amplifier."></a>
                                 <p>A <strong>basic transistor amplifier stage.</strong></p>
                             </div>
-                            <p>This circuit is a building block of most transistor amplifiers.</p>
-                            <p>This simulation runs at 268 kHz with an 8x oversampling factor (6.08x real time at a 44.1 kHz sample rate).</p>
+                            <p>This circuit is a building block of many transistor amplifiers.</p>
+                            <p>This simulation runs at 113 kHz with an 8x oversampling factor (2.5x real time).</p>
                             <p>Circuit described and analyzed in <a target="_blank" href="https://ccrma.stanford.edu/~dtyeh/papers/pubs.html">David Yeh's Dissertation</a> (section 5.3).</p>
                         </div>
                         <div class="col-md-4">
@@ -256,8 +255,8 @@
                                 <img src="img/commoncathodetriodeamp.png" alt="Basic common cathode triode amplifier."></a>
                                 <p>A <strong>basic triode amplifier stage.</strong></p>
                             </div>
-                            <p>This circuit is a building block of most tube amplifiers.</p>
-                            <p>This simulation runs at 213 kHz with an 8x oversampling factor (4.83x real time at a 44.1 kHz sample rate).</p>
+                            <p>This circuit is a building block of many tube amplifiers.</p>
+                            <p>This simulation runs at 279 kHz with an 8x oversampling factor (6.3x real time).</p>
                             <p>Circuit described and analyzed in <a target="_blank" href="https://ccrma.stanford.edu/~dtyeh/papers/pubs.html">David Yeh's Dissertation</a> (section 5.4).</p>
                         </div>
                     </div>
