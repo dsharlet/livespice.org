@@ -192,7 +192,7 @@
                     <h2>Examples</h2>
                     <p>Here are some examples of what LiveSPICE is currently capable of simulating. The examples include audio recordings produced using the
                         LiveSPICE VST plugin on clean guitar samples. Other processing, such as amp or speaker cabinets, are applied to both the clean and
-                        processed examples.</p>
+                        processed examples. The processed samples are shown in <span class="processed">green</span>, and the clean input samples are shown in <span class="clean">red</span>.</p>
 
                     <p>Some notes about the performance data:</p>
                     <ul>
@@ -211,8 +211,9 @@
                                 <img src="img/bosssd1.png" alt="Boss SD-1 Super Overdrive guitar pedal."></a>
                                 <p><strong>Boss SD-1 "Super Overdrive"</strong> guitar pedal.</p>
                             </div>
-                            <p>Audio example <a href="wav/BossSD1Clean.wav">clean</a> and <a href="wav/BossSD1.wav">processed</a>.
-                                Recorded into a clean amplifier simulation with a Marshall 1960 cabinet impulse response.</p>
+                            <p><audio class="processed" controls src="wav/BossSD1.wav" type="audio/wav"><a href="wav/BossSD1.wav">Processed</a></audio></p>
+                            <p><audio class="clean" controls src="wav/BossSD1Clean.wav" type="audio/wav"><a href="wav/BossSD1Clean.wav">Clean</a></audio></p>
+                            <p>Recorded into a clean amplifier simulation with a Marshall 1960 cabinet impulse response.</p>
                             <p>This simulation runs at 175 kHz with an 8x oversampling factor (4x real time).</p>
                             <p>Circuit schematic from <a target="_blank" href="http://www.gmarts.org/index.php?go=217">GM Arts</a>.</p>
                         </div>
@@ -221,28 +222,33 @@
                                 <img src="img/marshallbluesbreaker.png" alt="Marshall Blues Breaker guitar pedal."></a>
                                 <p><strong>Marshall "Blues Breaker"</strong> guitar pedal.</p>
                             </div>
-                            <p>Audio example <a href="wav/MarshallBluesBreakerClean.wav">clean</a> and <a href="wav/MarshallBluesBreaker.wav">processed</a>.
-                                Recorded into a clean amplifier simulation with a Fender Tweed Champ cabinet impulse response.</p>
+                            <p><audio class="processed" controls src="wav/MarshallBluesBreaker.wav" type="audio/wav"><a href="wav/MarshallBluesBreaker.wav">Processed</a></audio></p>
+                            <p><audio class="clean" controls src="wav/MarshallBluesBreakerClean.wav" type="audio/wav"><a href="wav/MarshallBluesBreakerClean.wav">Clean</a></audio></p>
+                            <p>Recorded into a clean amplifier simulation with a Fender Tweed Champ cabinet impulse response.</p>
                             <p>This simulation runs at 140 kHz with an 8x oversampling factor (3.2x real time).</p>
                             <p>Circuit schematic from <a target="_blank" href="http://www.gmarts.org/index.php?go=217">GM Arts</a>.</p>
                         </div>
                         <div class="col-md-4">
                             <div class="well captionbox"><a data-lightbox="examples" href="img/bassmanpreamp.png" title="Fender Bassman 5F6-A preamp.">
                                 <img src="img/bassmanpreamp.png" alt="Fender Bassman 5F6-A preamp."></a>
-                                <p><strong>Fender Bassman 5F6-A</strong> preamp and tone stack.</p>
+                                <p><strong>Fender Bassman 5F6-A</strong> preamp.</p>
                             </div>
-                            <p>Audio example <a href="wav/BassmanClean.wav">clean</a> and <a href="wav/Bassman.wav">processed</a>.
-                                Recorded into a Fender Tweed Champ cabinet impulse response.</p>
+                            <p><audio class="processed" controls src="wav/Bassman.wav" type="audio/wav"><a href="wav/Bassman.wav">Processed</a></audio></p>
+                            <p><audio class="clean" controls src="wav/BassmanClean.wav" type="audio/wav"><a href="wav/BassmanClean.wav">Clean</a></audio></p>
+                            <p>Recorded into a Fender Tweed Champ cabinet impulse response.</p>
                             <p>This simulation runs at 71.5 kHz with a 4x oversampling factor (1.6x real time).</p> 
                             <p>Circuit schematic from <a target="_blank" href="http://www.turretboards.com/guitar_amplifier_builders_info_schematics_library.htm">Watts Tube Audio</a>.</p>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-4">
                             <div class="well captionbox"><a data-lightbox="examples" href="img/ratvst.png" title="Pro Co Rat distortion pedal in VST plugin.">
                                 <img src="img/ratvst.png" alt="ProCo Rat distortion pedal in VST plugin."></a>
                                 <p><strong>ProCo Rat</strong> distortion pedal in VST plugin</p>
                             </div>
-                            <p>Audio example <a href="wav/RatClean.wav">clean</a> and <a href="wav/Rat.wav">processed</a>.
-                                Recorded into a clean amplifier simulation with a Marshall Plexi 4x12 cabinet impulse response.</p>
+                            <p><audio class="processed" controls src="wav/Rat.wav" type="audio/wav"><a href="wav/Rat.wav">Processed</a></audio></p>
+                            <p><audio class="clean" controls src="wav/RatClean.wav" type="audio/wav"><a href="wav/RatClean.wav">Clean</a></audio></p>
+                            <p>Recorded into a clean amplifier simulation with a Marshall Plexi 4x12 cabinet impulse response.</p>
                             <p>This simulation runs at 92.5 kHz with a 4x oversampling factor (2.1x real time).</p>
                             <p>Circuit described and analyzed at <a target="_blank" href="https://www.electrosmash.com/proco-rat">electrosmash.com</a>.</p>
                         </div>
