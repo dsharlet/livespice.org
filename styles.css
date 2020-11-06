@@ -115,6 +115,7 @@ audio {
     height: 30px;
     border-radius: 3px;
     border: 1px solid green;
+    padding: 1px 3px;
     white-space: nowrap;
 }
 
@@ -122,6 +123,7 @@ audio {
     height: 30px;
     border-radius: 3px;
     border: 1px solid red;
+    padding: 1px 3px;
     white-space: nowrap;
 }
 
