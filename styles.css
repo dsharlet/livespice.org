@@ -112,14 +112,14 @@ audio {
 }
 
 .processed {
-    padding: 1px 3px;
+    height: 30px;
     border-radius: 3px;
     border: 1px solid green;
     white-space: nowrap;
 }
 
 .clean {
-    padding: 1px 3px;
+    height: 30px;
     border-radius: 3px;
     border: 1px solid red;
     white-space: nowrap;
@@ -127,10 +127,10 @@ audio {
 
 audio.processed {
     border-radius: 28px; /* This is automatically limited to a semicircle if it's huge. */
-    border: 2px solid green;
+    border: 2px solid #22aa22;
 }
 
 audio.clean {
     border-radius: 28px; /* This is automatically limited to a semicircle if it's huge. */
-    border: 2px solid red;
+    border: 2px solid #ff6666;
 }
