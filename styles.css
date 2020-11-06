@@ -104,3 +104,35 @@ a[target="_blank"] {
 .lb-image { 
     max-width: inherit; 
 }
+
+audio {
+    display: inline;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.processed {
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid green;
+    padding: 1px 3px;
+    white-space: nowrap;
+}
+
+.clean {
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid red;
+    padding: 1px 3px;
+    white-space: nowrap;
+}
+
+audio.processed {
+    border-radius: 28px; /* This is automatically limited to a semicircle if it's huge. */
+    border: 2px solid #22aa22;
+}
+
+audio.clean {
+    border-radius: 28px; /* This is automatically limited to a semicircle if it's huge. */
+    border: 2px solid #ff6666;
+}
