@@ -136,3 +136,8 @@ audio.clean {
     border-radius: 28px; /* This is automatically limited to a semicircle if it's huge. */
     border: 2px solid #ff6666;
 }
+
+audio:focus {
+    border: 2px solid black;
+    outline: none;
+}
